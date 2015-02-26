@@ -54,3 +54,18 @@ Backtracking is able to find the solution more efficiently by cutting off potent
 ultimately lead to failure by checking value assignments with domain consistencies (at the very least).
 Backtracking can be made even more efficient by incorporating inference checks and informed variable and value
 ordering techniques such as the Most Constraining Value (MCV) heuristic.
+
+## Example
+
+Given Figure 2a as input, there is only a single solution, as shown in Figure 2b.
+
+![Figure 2](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/2.png)
+
+Figure 2. Sample KenKen puzzle and solution.
+
+The complete solution trace of all intermediary puzzle boards that were considered during a backtracking procedure,
+beginning a the root node is shown below in Figure 3.
+
+![Figure 3](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/3.png)
+
+Figure 3. Backtracking procedure KenKen puzzle board trace
