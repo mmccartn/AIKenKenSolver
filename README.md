@@ -70,14 +70,13 @@ beginning a the root node is shown below in Figure 3.
 
 Figure 3. Backtracking procedure KenKen puzzle board trace
 
-## Backtracking Heuristics
+## Backtracking Heuristics Used
 
 The MCV heuristic is crucial to an effective backtracking solution to the KenKen CSP as it provides for the
 mechanism to assign simple very constrained cells (Ex: single-cell-cages) first so as to create more row and
 column constraints when assigning the less constrained cells. For example, in Figure 1b, assigning the highly
-constrained cells (0,2) and (2,0) with 2 and 1 respectively cuts the domain for cell (0,0) down from {3,2,1} to {3},
+constrained cells (0,2) and (2,0) with 2 and 1 respectively cuts the domain for cell (0,0) down from {3,2,1} to {3}, which results in a similarly highly constrained cell which imposes even more constrain other neighboring cells.
 
-which results in a similarly highly constrained cell which imposes even more constrain other neighboring cells.
 If the MCV approach leaves remaining variable assignments the LCV approach can be used to efficiently search
 for a correct assignment by exploring values from least used in neighboring cells to most. For example, if we
 wanted to start the assignment process of Figure 1b beginning at cell (2,1), it makes sense to start out with 2
