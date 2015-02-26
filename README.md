@@ -27,7 +27,7 @@ Cage_target_3 Cage_operator_3 square_index_1 square_index_2 ... square_index_n
 Cage_result_M Cage_operator_M square_index_1 square_index_2 ... square_index_n
 ```
 
-With the input text defining figure 1 as follows:
+The text representing the Figure 1a puzzle would then be:
 
 ```
 2.0
