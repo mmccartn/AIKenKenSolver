@@ -96,3 +96,5 @@ The same experiment was performed on input file: input_q3.txt as shown in Figure
 heuristic combination resulted in fewer assignments required to find the first 4 solutions than the non-heuristic  case. However, the MCVar/LCVal heuristic combination performed worse than the no-heuristic when finding the last 4 solutions.
 
 ![Figure 5](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/5.png)
+
+Figure 5. Number of variable assignments before each solution for input_q3.txt was found, given each heuristic combination.
