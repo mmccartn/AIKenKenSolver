@@ -4,23 +4,6 @@ Solves arbitrary [KenKen](https://en.wikipedia.org/wiki/KenKen) puzzles, by repr
 Most Constraining Variable (**MCV**) and Least Constraining Value (**LCV**) heuristic are used to backtrack 
 from *a* solution and return all other possible solutions for a given puzzle.
 
-## Why use backtracking?
-
-Naïve search approaches ignore the commutativity property of this CSP (and all others CSPs): the order of
-applying values to each cell does not matter.
-Additionally, pieces of the KenKen puzzle can be quickly solved by inference; by performing a slow brute-force
-naïve search approach, we would be ignoring following properties of this type of CSP:
-
-1. Node consistencies of cells given their cage’s target value and operator.
-2. Arc consistencies between cells of known value and their other corresponding row and column cells.
-3. Path consistencies of cells outside of a cage but in the same row or column of 2 or more cage cells containing a more constrained domain than the exterior cell.
-      * For example: Cell (1,0) in Figure 1b is constrained to 2 only because the two cells (1,1) and (1,2) can only each contain either 3 or 1, removing the possibility of a 3 or a 1 anywhere else in row 1.
-
-Backtracking is able to find the solution more efficiently by cutting off potentially deep branches that will
-ultimately lead to failure by checking value assignments with domain consistencies (at the very least).
-Backtracking can be made even more efficient by incorporating inference checks and informed variable and value
-ordering techniques such as the Most Constraining Value (MCV) heuristic.
-
 ## Representation of the KenKen Puzzles
 
 ### Board
@@ -55,4 +38,19 @@ and only in the order that results in a positive whole number.
 Additionally, cages of size 1 and containing no explicit operator are meant to contain only the target value.
 Please refer to Figure 1c for a constraint satisfied solution to Figure 1a.
 
-## 
+## Why use backtracking?
+
+Naïve search approaches ignore the commutativity property of this CSP (and all others CSPs): the order of
+applying values to each cell does not matter.
+Additionally, pieces of the KenKen puzzle can be quickly solved by inference; by performing a slow brute-force
+naïve search approach, we would be ignoring following properties of this type of CSP:
+
+1. Node consistencies of cells given their cage’s target value and operator.
+2. Arc consistencies between cells of known value and their other corresponding row and column cells.
+3. Path consistencies of cells outside of a cage but in the same row or column of 2 or more cage cells containing a more constrained domain than the exterior cell.
+      * For example: Cell (1,0) in Figure 1b is constrained to 2 only because the two cells (1,1) and (1,2) can only each contain either 3 or 1, removing the possibility of a 3 or a 1 anywhere else in row 1.
+
+Backtracking is able to find the solution more efficiently by cutting off potentially deep branches that will
+ultimately lead to failure by checking value assignments with domain consistencies (at the very least).
+Backtracking can be made even more efficient by incorporating inference checks and informed variable and value
+ordering techniques such as the Most Constraining Value (MCV) heuristic.
