@@ -21,15 +21,15 @@ Figure 1: Sample KenKen puzzle board of size 3-by-3. [1]
 
 ```
 N := n2 “number of cells in grid”
-X := {0, ... , N-1}
-D := {1, ... , n}
-C={
-  [for Row r in AllRows {AllDiff(AllCellsInRow(r))}],
-  [for Column c in AllColumns {AllDiff(AllCellsInColumn(c))}]
-  [for Cage a in AllCages {
-    TargetNumberForCage(a) == ApplyCageCageOperator(OperatorForCage(a), AllCellsInCage(a))
-  }]
-}
+X := [0, ... , N-1]
+D := [1, ... , n]
+C = [
+      [for Row r in AllRows AllDiff(AllCellsInRow(r))],
+      [for Column c in AllColumns {AllDiff(AllCellsInColumn(c))}]
+      [for Cage a in AllCages (
+        TargetNumberForCage(a) == ApplyCageCageOperator(OperatorForCage(a), AllCellsInCage(a))
+      )]
+  ]
 ```
 
 It is implied that the ApplyCageCageOperator function from above takes into account the non-commutative
