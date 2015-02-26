@@ -15,7 +15,7 @@ inclusive. Please refer to Figure 1a for an example KenKen board representation.
 
 ![Figure 1](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/1.png)
 
-Figure 1: Sample KenKen puzzle board of size 3-by-3. [1]
+Figure 1: Sample KenKen puzzle board of size 3-by-3.
 
 ### Constraints
 
@@ -82,3 +82,4 @@ for a correct assignment by exploring values from least used in neighboring cell
 wanted to start the assignment process of Figure 1b beginning at cell (2,1), it makes sense to start out with 2
 because choosing either 3 or 1 would limit our future assignment options for 3 other cells as opposed to just one
 for the 2 assignment.
+
