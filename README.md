@@ -14,7 +14,7 @@ naïve search approach, we would be ignoring following properties of this type o
 1. Node consistencies of cells given their cage’s target value and operator.
 2. Arc consistencies between cells of known value and their other corresponding row and column cells.
 3. Path consistencies of cells outside of a cage but in the same row or column of 2 or more cage cells containing a more constrained domain than the exterior cell.
-      a. For example: Cell (1,0) in Figure 1b is constrained to 2 only because the two cells (1,1) and (1,2) can only each contain either 3 or 1, removing the possibility of a 3 or a 1 anywhere else in row 1.
+      * For example: Cell (1,0) in Figure 1b is constrained to 2 only because the two cells (1,1) and (1,2) can only each contain either 3 or 1, removing the possibility of a 3 or a 1 anywhere else in row 1.
 
 Backtracking is able to find the solution more efficiently by cutting off potentially deep branches that will
 ultimately lead to failure by checking value assignments with domain consistencies (at the very least).
