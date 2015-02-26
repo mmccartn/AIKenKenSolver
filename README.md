@@ -17,6 +17,26 @@ inclusive. Please refer to Figure 1a for an example KenKen board representation.
 
 Figure 1: Sample KenKen puzzle board of size 3-by-3.
 
+The input format used to textually describe a puzzle is:
+
+```
+Cage_target_1 Cage_operator_1 square_index_1 square_index_2 ... square_index_n
+Cage_target_2 Cage_operator_2 square_index_1 square_index_2 ... square_index_n
+Cage_target_3 Cage_operator_3 square_index_1 square_index_2 ... square_index_n
+...
+Cage_result_M Cage_operator_M square_index_1 square_index_2 ... square_index_n
+```
+
+With the input text defining figure 1 as follows:
+
+```
+2.0
+2-14
+6*25
+3/36
+2/78
+```
+
 ### Constraints
 
 ```python
