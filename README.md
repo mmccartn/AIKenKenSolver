@@ -83,3 +83,16 @@ wanted to start the assignment process of Figure 1b beginning at cell (2,1), it 
 because choosing either 3 or 1 would limit our future assignment options for 3 other cells as opposed to just one
 for the 2 assignment.
 
+## Heuristic Analysis
+
+For input_example3.txt, use of the MCV and LCV heuristics resultes in a decrease of about 50 variable
+assignments with respect to the non-heuristic case, before the 1st solution (I) was found (see Figure 4). However, the reciprocal of both heuristics resulted in a significant increase in variable assignments before the first solution was found (See LCVar/MCVal in Figure 4).
+
+![Figure 4](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/4.png)
+
+Figure 4. Number of variable assignments before each solution (I, II, III, IV) was found given each heuristic combination.
+
+The same experiment was performed on input file: input_q3.txt as shown in Figure 5. The MCVar/LCVal
+heuristic combination resulted in fewer assignments required to find the first 4 solutions than the non-heuristic  case. However, the MCVar/LCVal heuristic combination performed worse than the no-heuristic when finding the last 4 solutions.
+
+![Figure 5](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/5.png)
