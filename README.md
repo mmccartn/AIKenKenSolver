@@ -122,3 +122,6 @@ Figure 5. Number of variable assignments before each solution for input_q3.txt w
 ## Usage
 
 Compile and run `KenKenPuzzleSolver [INPUT_FILE] [OUTPUT_FILE]`
+
+## References
+[Artificial Intelligence: A Modern Approach ](http://books.google.com/books/about/Artificial_Intelligence.html?id=8jZBksh-bUMC)
