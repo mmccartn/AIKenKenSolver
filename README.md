@@ -13,4 +13,5 @@ The KenKen board is represented by a square n-by-n grid of cells. The grid may c
 for the cage followed by a mathematical operator. Each cell may contain any one of the digits: 1through n
 inclusive. Please refer to Figure 1a for an example KenKen board representation.
 
-![alt tag](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/1.png)
+->![Figure 1](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/1.png)<-
+->Figure 1: Sample KenKen puzzle board of size 3-by-3. [1]-<
