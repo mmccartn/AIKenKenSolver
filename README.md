@@ -26,7 +26,9 @@ D := {1, ... , n}
 C={
   [for Row r in AllRows {AllDiff(AllCellsInRow(r))}],
   [for Column c in AllColumns {AllDiff(AllCellsInColumn(c))}]
-  [for Cage a in AllCages {TargetNumberForCage(a) == ApplyCageCageOperator(OperatorForCage(a), AllCellsInCage(a))}]
+  [for Cage a in AllCages {
+    TargetNumberForCage(a) == ApplyCageCageOperator(OperatorForCage(a), AllCellsInCage(a))
+  }]
 }
 ```
 
