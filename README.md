@@ -13,11 +13,13 @@ The KenKen board is represented by a square n-by-n grid of cells. The grid may c
 for the cage followed by a mathematical operator. Each cell may contain any one of the digits: 1through n
 inclusive. Please refer to Figure 1a for an example KenKen board representation.
 
-![Figure 1](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/1.png)<-
+![Figure 1](https://raw.githubusercontent.com/mmccartn/AIKenKenSolver/master/figures/1.png)
+
 Figure 1: Sample KenKen puzzle board of size 3-by-3. [1]
 
 ### Constraints
 
+```
 N := n2 “number of cells in grid”
 X := {0, ... , N-1}
 D := {1, ... , n}
@@ -26,6 +28,7 @@ C={
   [for Column c in AllColumns {AllDiff(AllCellsInColumn(c))}]
   [for Cage a in AllCages {TargetNumberForCage(a) == ApplyCageCageOperator(OperatorForCage(a), AllCellsInCage(a))}]
 }
+```
 
 It is implied that the ApplyCageCageOperator function from above takes into account the non-commutative
 properties of subtraction and division: subtraction and division operations are performed on only cages of size 2
