@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * @author McMatt
+ * @author Matt
  */
 public class Cell {
 

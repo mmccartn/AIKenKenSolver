@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author McMatt
+ * @author Matt
  */
 public class Cage {
 

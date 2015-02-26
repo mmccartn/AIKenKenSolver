@@ -2,7 +2,7 @@ package kenkenpuzzlesolver;
 
 /**
  *
- * @author McMatt
+ * @author Matt
  */
 public class KenKenPuzzleSolver {
 

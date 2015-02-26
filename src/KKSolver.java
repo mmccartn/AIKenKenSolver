@@ -4,7 +4,7 @@ import java.util.ArrayList;
 //import org.apache.commons.lang3.mutable.MutableInt;
 
 /**
- * @author WrightEdge LSFL 007
+ * @author Matt
  */
 public class KKSolver {
 

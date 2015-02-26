@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author McMatt
+ * @author Matt
  */
 public class KKFIO {
 

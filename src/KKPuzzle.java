@@ -10,7 +10,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 /**
- * @author McMatt
+ * @author Matt
  */
 public class KKPuzzle {
 
