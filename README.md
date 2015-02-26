@@ -19,7 +19,7 @@ Figure 1: Sample KenKen puzzle board of size 3-by-3. [1]
 
 ### Constraints
 
-```
+```python
 N := n2 “number of cells in grid”
 X := [0, ... , N-1]
 D := [1, ... , n]
